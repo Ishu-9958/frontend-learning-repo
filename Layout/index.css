@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: #f5f5f5;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+
+/*    left    */
+
+.left-container{
+    height: 100vh;
+    width: 15vw;
+    /* background-color: #f5f5f5; */
+
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    
+    
+}
+
+.item-container{
+    width: 100%;
+    height: 40vh;
+    /* background-color: blue; */
+}
+
+.left-btn-container{
+    background-color: purple;
+    width: 100%;
+    height: 3rem;
+    border-radius: 0.25rem;
+    background-color: #171717;
+    border: 2px solid #e5e7eb;
+
+}
+
+.item{
+    background-color: rgb(245 245 245 / var(1, 1));
+    background-color: #e5e5e56d;
+    width: 100%;
+    height: 2.5rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.25rem;
+    margin: 1rem 0;
+}
+
+.first-item{
+    background-color: #E5E5E5;
+}
+
+
+/*right*/
+
+.right-container{
+    height: 100vh;
+    width: 20vw;
+    /* background-color: black; */
+    padding: 16px;
+}
+
+
+
+.right-box1{
+    height: 2.5rem;
+    background-color:  #e5e5e5;
+    width: 100%;
+    margin: 20px 0;
+    border: 2px solid #e5e7eb;
+    border-radius: 9999px;
+}
+
+.right-box2{
+    width: 100%;
+    background-color:  #e5e5e5;
+    height: 12rem;
+    margin: 20px 0;
+     border: 2px solid #e5e7eb;
+     border-radius: 0.75rem;
+}
+.right-box3{
+    width: 100%;
+    background-color:  #e5e5e5;
+    height: 16rem;
+    margin: 20px 0;
+     border: 2px solid #e5e7eb;
+     border-radius: 0.75rem;
+}
+
+
+
+
+
+/*mid*/
+
+
+
+.mid-container{
+    width: 65vw;
+    height: 100vh;
+    border: 2px solid #e5e7eb;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    
+}
+
+.wrapper{
+    padding: 16px;
+    border: 2px solid #e5e7eb;
+    /* width: 100%; */
+    /* height: 90vh; */
+    height: 95%;
+    border-left: none;
+    border-right: none;
+
+    
+}
+
+.mid-box{
+    background-color: #e5e5e5;
+    width: 100%;
+    height: 20%;
+    border: 2px solid #e5e7eb;
+    margin: 1rem 0;
+    /* border-left: none;
+    border-right: none; */
+    border-radius: 0.25rem;
+}
