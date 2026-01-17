@@ -1,0 +1,259 @@
+:root{
+    --border-color:#e5e7eb;
+    --black-color:#171717;
+    --second-color:#e5e5e5;
+    --first-color:#d4d4d4;
+    --third-color:#f5f5f5;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+    height: 100%;
+}
+
+.container{
+    width: 100%;
+    /* min-height: 100vh; */
+}
+
+.nav-container{
+    width: 100%;
+    height: 7vh;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+
+    position:fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: white;
+}
+
+.youtube{
+    width: 6%;
+    height:80%;
+    background-color: var(--black-color);
+    border-radius: 0.25rem;
+}
+
+.search{
+
+    width: 30%;
+    height: 99%;
+    background-color: var(--third-color);
+    border-radius: 0.75rem;
+}
+
+.boxes-nav{
+    width: 8rem;
+    height: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.square-box{
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--second-color);
+    border-radius: 0.25rem;
+}
+
+.nav-circle{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: var(--second-color);
+}
+
+
+
+
+
+.video-side-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 100%;
+    height: calc(100vh - 7vh);
+    background-color: var(--third-color);
+    overflow-y: auto;
+    margin-top: 7vh;
+
+}
+
+
+.video{
+    width: 75vw;
+    height: 75vh;
+    background-color: var(--black-color);
+    border-radius: 0.75rem;
+}
+
+.playlist{
+    width: 22vw;
+    height: 70vh;
+    /* background-color: red; */
+    border-radius: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.next-video-container{
+    width: 100%;
+    height: 11vh;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-around;
+    gap:1rem;
+}
+
+.thumbnail{
+    width: 20vw;
+    height: 10vh;
+    background-color: var(--first-color);
+    border-radius: 0.25rem;
+}
+
+.thumbnail-title-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.thumbnail-title1{
+    width: 100%;
+    height: 2vh;
+
+    background-color: var(--second-color);
+    border-radius: 0.25rem;
+}
+
+
+.thumbnail-title2{
+    width: 70%;
+    height: 2vh;
+    background-color: var(--second-color);
+    border-radius: 0.25rem;
+}
+
+
+
+
+.video-title{
+    width: 80%;
+    height: 2vh;
+    background-color: var(--first-color);
+    border-radius: 0.25rem;
+    margin: 1rem 0;
+}
+
+.like-share{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subscribe-container{
+    width: 25%;
+    height: 8vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.icon{
+    background-color: var(--first-color);
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.icon-next-box{
+    width: 40%;
+    height: 2vh;
+    background-color: var(--second-color);
+    border-radius: 0.25rem;
+    position: relative;
+    bottom: 0.5rem;
+}
+
+.subscribe{
+    width: 7rem;
+    height: 2.25rem;
+    background-color: var(--black-color);
+    border-radius: 999px;
+}
+
+.share-container{
+    width: 22%;
+    height: 8vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.setting{
+    width: 8rem;
+    height: 2.25rem;
+    background-color: var(--second-color);
+    border-radius: 999px;
+}
+
+.share{
+    width: 6rem;
+    height: 2.25rem;
+    background-color: var(--second-color);
+    border-radius: 999px;
+}
+
+.small-circle{
+    width: 2.25rem;
+    height: 2.25rem;
+    background-color: var(--second-color);
+    border-radius: 50%;
+
+}
+
+.comment-container{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--second-color);
+    border-radius: 0.75rem;
+    padding: 1rem;
+}
+
+.comment1{
+    width: 20%;
+    height: 2vh;
+    background-color: var(--first-color);
+    
+}
+
+.comment2{
+    width: 100%;
+    height: 2vh;
+    background-color: var(--first-color);
+}
