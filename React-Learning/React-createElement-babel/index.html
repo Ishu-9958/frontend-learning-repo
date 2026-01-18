@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <div id="root"></div>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    
+
+
+    
+
+
+    <!-- <script>
+        const root=document.querySelector('#root');
+        const child=document.createElement('div');
+        child.innerText='i am child'; 
+        child.className='box';
+        root.appendChild(child);
+    </script> -->
+
+
+    <!-- <script>
+        const rootdiv=document.querySelector('#root');
+        const reactElement=React.createElement('div',{
+            className:'box',
+            id:'paragraph',
+        },'i am child');
+
+        console.log(reactElement);
+
+        ReactDOM.render(reactElement,rootdiv);
+    </script> -->
+
+
+    <!-- <script type="text/babel">
+        const root=document.querySelector('#root');
+
+        const UI= <div className='box' id='paragraph'>I am a div</div> // jsx
+
+        //babel : convert jsx to React.createElement(); // before react 17
+
+
+        /* babel : after react17+ convert jsx to 
+                import { jsx as _jsx } from "react/jsx-runtime";
+                 _jsx("h1", { children: "Hello" });
+        */
+
+
+        ReactDOM.render(UI,root);
+    </script>
+     -->
+
+</body>
+</html>
