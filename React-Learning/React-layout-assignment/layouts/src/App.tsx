@@ -11,6 +11,7 @@ import { ChatMessenger } from "./pages/ChatMessenger";
 import { ProfileFeed } from "./pages/ProfileFeed";
 import { SearchResult } from "./pages/SearchResult";
 import { VideoPlayer } from "./pages/VideoPlayer";
+import { EcommercePdp } from "./pages/EcommercePdp";
 
 
 const router=createBrowserRouter([
@@ -58,6 +59,10 @@ const router=createBrowserRouter([
   ,{
     path:'video-player',
     element: <VideoPlayer/>
+  }
+  ,{
+    path:'ecommerce-pdp',
+    element: <EcommercePdp/>
   }
 ]);
 
