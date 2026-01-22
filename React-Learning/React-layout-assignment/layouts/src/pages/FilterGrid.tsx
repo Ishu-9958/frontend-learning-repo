@@ -21,7 +21,7 @@ export const FilterGrid = () => {
               <div className="h-5 w-20 bg-neutral-300 rounded"></div>
               <div className="flex flex-col gap-2">
 
-                {new Array(3).fill(null).map((item,index)=>{
+                {new Array(3).fill(null).map((_,index)=>{
                     return <div className="h-6 bg-neutral-100 rounded" key={index}></div>
                 })}
               </div>
@@ -29,7 +29,7 @@ export const FilterGrid = () => {
             <div className="flex flex-col gap-2">
               <div className="h-5 w-28 bg-neutral-300 rounded"></div>
               <div className="flex flex-col gap-2">
-                {new Array(2).fill(null).map((item,index)=>{
+                {new Array(2).fill(null).map((_,index)=>{
                     return <div className="h-6 bg-neutral-100 rounded" key={index}></div>
                 })}
               </div>
@@ -41,7 +41,7 @@ export const FilterGrid = () => {
               <div className="h-8 w-32 bg-neutral-100 rounded"></div>
             </div>
             <div className="grid grid-cols-3 gap-4 flex-1">
-                {new Array(6).fill(null).map((item,index)=>{
+                {new Array(6).fill(null).map((_,index)=>{
                 return <Card key={index}/>
             })}
             </div>

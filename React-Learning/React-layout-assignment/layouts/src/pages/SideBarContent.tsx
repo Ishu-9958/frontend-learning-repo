@@ -12,7 +12,7 @@ const SideBarContent = () => {
           <div className="flex-1 p-4 pt-0 flex flex-col gap-1">
             
 
-            {new Array(7).fill(null).map((item,index)=>{
+            {new Array(7).fill(null).map((_,index)=>{
               let className="h-10 bg-neutral-100 rounded";
               if(index===0) className="h-10 bg-neutral-200 rounded";
               else if(index===4) className="h-px bg-neutral-200 my-2";
@@ -29,7 +29,7 @@ const SideBarContent = () => {
             <div className="h-8 w-64 bg-neutral-100 rounded"></div>
           </div>
           <div className="flex-1 p-4 flex flex-col gap-0 overflow-auto">
-            {new Array(8).fill(null).map((item,index)=>{
+            {new Array(8).fill(null).map((_,index)=>{
               return <MainList key={index}></MainList>
 
             })}

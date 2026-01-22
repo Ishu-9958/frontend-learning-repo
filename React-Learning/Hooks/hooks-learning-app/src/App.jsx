@@ -1,4 +1,4 @@
-import {useState,useEffect,useRef,useMemo, useCallback} from 'react';
+import {useState,useEffect,useRef,useMemo, useCallback, useReducer} from 'react';
 import {Component1} from './components/Component1';
 import {Component2} from './components/Component2';
 import {Component3} from './components/Component3';
@@ -6,7 +6,12 @@ import Context from './context/creatingContext';
 import Component4 from './components/Component4';
 import Component5 from './components/Component5';
 
-
+const reducer=(cnt,action)=>{
+  if(action.type==='inc'){
+    return cnt+1;
+  }
+  return cnt-1;
+}
 
 function App() {
 
@@ -15,6 +20,10 @@ function App() {
   const [userObj,setUserObj]=useState({});    //  --> It is storing the object from api , testing for useEffect() stores whenever counter changes
   const refer=useRef(null);  // ---> I am giving DOM access to component 3's span
   const [callAPIsum,setApisum]=useState(0);  // --> state stores sum , i create it for testing useMemo()
+
+  const [cnt,dispatch]=useReducer(reducer,0);
+
+
 
 
   // functions related to counter
@@ -150,6 +159,11 @@ function App() {
       {/* <Component5 handleFn={handleFn}></Component5>  */}
 
       <Component5 handleFn={cashedFunctionUsingCallback}></Component5>
+
+      <div>{cnt}</div>
+
+      <button onClick={()=> dispatch({type:"inc"})}>Inc </button>
+      <button onClick={()=> dispatch({type:"dec"})}>Dec </button>
 
       
 

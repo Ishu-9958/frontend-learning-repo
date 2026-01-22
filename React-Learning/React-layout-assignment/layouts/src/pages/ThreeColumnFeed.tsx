@@ -6,7 +6,7 @@ function ThreeColumnFeed(){
     <div className="flex h-full">
         <div className="w-64 border-r border-neutral-200 p-4 flex flex-col gap-2">
 
-          {new Array(5).fill(null).map((item, index) => {
+          {new Array(5).fill(null).map((_, index) => {
             const className= index===0? `h-10 bg-neutral-200 rounded` : `h-10 bg-neutral-100 rounded`;
             return  <Box key={index} className={className}></Box>
           })}
@@ -18,7 +18,7 @@ function ThreeColumnFeed(){
           <div className="h-14 border-b border-neutral-200"></div>
           <div className="flex-1 p-4 flex flex-col gap-4 overflow-auto">
 
-            {new Array(3).fill(null).map((item, index) => {
+            {new Array(3).fill(null).map((_, index) => {
             const className= index%2===0? "h-40 bg-neutral-100 rounded border border-neutral-200" : "h-56 bg-neutral-100 rounded border border-neutral-200";
             return  <Box key={index} className={className}></Box>
           })}
