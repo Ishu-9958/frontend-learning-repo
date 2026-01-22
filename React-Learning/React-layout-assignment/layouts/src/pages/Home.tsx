@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function Home(){
 
-    const paths=['','3-column-feed','sidebar-content','filter-grid','dashboard-kpi','data-table','kanban-board','chat-messenger','profile-feed'];
+    const paths=['','3-column-feed','sidebar-content','filter-grid','dashboard-kpi','data-table','kanban-board','chat-messenger','profile-feed','search-result'];
 
     return <>
 

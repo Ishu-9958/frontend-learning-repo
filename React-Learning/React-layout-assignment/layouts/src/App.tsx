@@ -9,6 +9,7 @@ import { DataTable } from "./pages/DataTable";
 import { KanbanBoard } from "./pages/KanbanBoard";
 import { ChatMessenger } from "./pages/ChatMessenger";
 import { ProfileFeed } from "./pages/ProfileFeed";
+import { SearchResult } from "./pages/SearchResult";
 
 
 const router=createBrowserRouter([
@@ -48,6 +49,10 @@ const router=createBrowserRouter([
   ,{
     path:'profile-feed',
     element: <ProfileFeed/>
+  }
+  ,{
+    path:'search-result',
+    element: <SearchResult/>
   }
 ]);
 
