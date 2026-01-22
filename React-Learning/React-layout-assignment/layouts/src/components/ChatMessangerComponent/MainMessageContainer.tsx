@@ -1,0 +1,31 @@
+
+export const MainMessageContainer = () => {
+  return (
+    <div className="flex-1 p-6 flex flex-col gap-4 overflow-auto">
+      <div className="flex gap-3">
+        <div className="h-8 w-8 bg-neutral-200 rounded-full shrink-0"></div>
+        <div className="max-w-md bg-neutral-100 rounded-2xl rounded-tl-none p-4">
+          <div className="h-4 w-64 bg-neutral-200 rounded"></div>
+        </div>
+      </div>
+      <div className="flex gap-3 self-end">
+        <div className="max-w-md bg-neutral-900 rounded-2xl rounded-tr-none p-4">
+          <div className="h-4 w-48 bg-neutral-700 rounded"></div>
+          <div className="h-4 w-32 bg-neutral-700 rounded mt-2"></div>
+        </div>
+      </div>
+      <div className="flex gap-3">
+        <div className="h-8 w-8 bg-neutral-200 rounded-full shrink-0"></div>
+        <div className="max-w-md bg-neutral-100 rounded-2xl rounded-tl-none p-4">
+          <div className="h-4 w-80 bg-neutral-200 rounded"></div>
+          <div className="h-4 w-48 bg-neutral-200 rounded mt-2"></div>
+        </div>
+      </div>
+      <div className="flex gap-3 self-end">
+        <div className="max-w-md bg-neutral-900 rounded-2xl rounded-tr-none p-4">
+          <div className="h-4 w-56 bg-neutral-700 rounded"></div>
+        </div>
+      </div>
+    </div>
+  );
+};
