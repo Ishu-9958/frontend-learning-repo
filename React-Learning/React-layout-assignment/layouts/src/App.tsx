@@ -13,6 +13,7 @@ import { SearchResult } from "./pages/SearchResult";
 import { VideoPlayer } from "./pages/VideoPlayer";
 import { EcommercePdp } from "./pages/EcommercePdp";
 import { LiveScore } from "./pages/LiveScore";
+import { SettingPage } from "./pages/SettingPage";
 
 
 const router=createBrowserRouter([
@@ -68,6 +69,10 @@ const router=createBrowserRouter([
   ,{
     path:'live-score',
     element: <LiveScore/>
+  }
+  ,{
+    path:'setting-page',
+    element: <SettingPage/>
   }
 ]);
 
