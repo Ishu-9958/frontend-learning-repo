@@ -14,7 +14,7 @@ function Home(){
 
         <div className="self-center ">
 
-            <a href="https://github.com/Ishu-9958/frontend-learning-repo/tree/main/React-Learning/React-layout-assignment/layouts" target="_blank" className="text-white font-bold text-2xl cursor-pointer hover:text-blue-500 text-center font-mono">Code</a>
+            <a href="https://github.com/Ishu-9958/frontend-learning-repo/tree/main/React-Learning/React-layout-assignment/layouts" target="_blank" className="text-white font-bold text-2xl cursor-pointer hover:text-blue-500 text-center font-mono border-2 p-4 rounded-2xl">Github Repo</a>
         </div>
 
         <div className="flex flex-col  w-full  justify-around self-center gap-7">
