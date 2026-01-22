@@ -8,6 +8,7 @@ import { DashboardKpi } from "./pages/DashboardKpi";
 import { DataTable } from "./pages/DataTable";
 import { KanbanBoard } from "./pages/KanbanBoard";
 import { ChatMessenger } from "./pages/ChatMessenger";
+import { ProfileFeed } from "./pages/ProfileFeed";
 
 
 const router=createBrowserRouter([
@@ -43,6 +44,10 @@ const router=createBrowserRouter([
   ,{
     path:'chat-messenger',
     element: <ChatMessenger/>
+  }
+  ,{
+    path:'profile-feed',
+    element: <ProfileFeed/>
   }
 ]);
 
